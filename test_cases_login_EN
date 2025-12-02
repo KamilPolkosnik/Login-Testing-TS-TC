@@ -1,9 +1,8 @@
 # Test Cases – Login Module
 
-| ID      | Title                                | Precondition                     | Steps                                                                 | Expected result                                                    |
-|---------|--------------------------------------|----------------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------|
-| TC_LOGIN_001 | Successful login with valid data | User account exists, is active   | 1. Open login page<br>2. Enter valid email<br>3. Enter valid password<br>4. Click "Login" | User is redirected to dashboard/home page.                        |
-| TC_LOGIN_002 | Login with invalid password     | User account exists              | 1. Open login page<br>2. Enter valid email<br>3. Enter invalid password<br>4. Click "Login" | Login is rejected, meaningful error message is shown.             |
-| TC_LOGIN_003 | Empty email and password        | –                                | 1. Open login page<br>2. Leave email and password empty<br>3. Click "Login" | Form is not submitted, validation messages are shown.             |
-| TC_LOGIN_004 | Invalid email format            | –                                | 1. Open login page<br>2. Enter "user@" as email<br>3. Enter any password<br>4. Click "Login" | Validation error for email format is displayed.                   |
-| TC_LOGIN_005 | Logout                           | User is logged in                | 1. Click "Logout" button<br>2. Try to open a protected page via URL | User is redirected to login page, protected page is not accessible. |
+ID                        Title                           Precondition                                               Steps                                                                       Expected result
+TC_LOGIN_001 Successful login with valid data   User account exists, is active   | 1. Open login page  2. Enter valid email  3. Enter valid password  4. Click "Login"          > User is redirected to dashboard/home page.                      
+TC_LOGIN_002 Login with invalid password        User account exists              | 1. Open login page  2. Enter valid email  3. Enter invalid password  4. Click "Login"       > Login is rejected, meaningful error message is shown.          
+TC_LOGIN_003 Empty email and password           -                                | 1. Open login page  2. Leave email and password empty  3. Click "Login"                     > Form is not submitted, validation messages are shown.                
+TC_LOGIN_004 Invalid email format               -                                | 1. Open login page  2. Enter "user@" as email  3. Enter any password  4. Click "Login"      > Validation error for email format is displayed.                
+TC_LOGIN_005 Logout                             User is logged in                | 1. Click "Logout" button  2. Try to open a protected page via URL User is redirected to login page, protected page is not accessible. > User is logged out         
