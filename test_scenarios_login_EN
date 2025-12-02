@@ -1,0 +1,25 @@
+# Test Scenarios – Login Module
+
+1. Successful login with valid credentials
+- User with active account can log in using correct email and password.
+
+2. Login with invalid password
+- System rejects incorrect password and shows clear error message.
+
+3. Login with non-existing account
+- System rejects login attempt and does not reveal if the account exists.
+
+4. Required fields validation
+- User cannot submit the form with empty email and/or password.
+
+5. Email format validation
+- System shows validation error for invalid email format (e.g. "user@", "user@domain").
+
+6. Password reset link
+- "Forgot password" link opens password reset flow.
+
+7. Remember me option
+- If "Remember me" is checked, user stays logged in after closing and reopening the browser.
+
+8. Logout
+- Logout button logs user out and user cannot access protected pages after logout.
