@@ -1,0 +1,25 @@
+# Scenariusz testowy – logowanie
+
+1. Pomyślne logowanie z prawidłowymi danymi uwierzytelniającymi
+- Użytkownik z aktywnym kontem może zalogować się, używając poprawnego adresu e-mail i hasła.
+
+2. Logowanie z nieprawidłowym hasłem
+- System odrzuca nieprawidłowe hasło i wyświetla jasny komunikat o błędzie.
+
+3. Logowanie z nieistniejącego konta
+- System odrzuca próbę logowania i nie informuje, czy konto istnieje.
+
+4. Walidacja pól wymaganych
+- Użytkownik nie może wysłać formularza z pustym adresem e-mail i/lub hasłem.
+
+5. Walidacja formatu adresu e-mail
+- System wyświetla błąd walidacji dla nieprawidłowego formatu adresu e-mail (np. „user@”, „user@domain”).
+
+6. Link resetowania hasła
+- Link „Zapomniałem hasła” otwiera procedurę resetowania hasła.
+
+7. Opcja „Zapamiętaj mnie”
+- Jeśli opcja „Zapamiętaj mnie” jest zaznaczona, użytkownik pozostaje zalogowany po zamknięciu i ponownym otwarciu przeglądarki.
+
+8. Wylogowanie
+- Przycisk „Wyloguj” wylogowuje użytkownika i uniemożliwia mu dostęp do chronionych stron po wylogowaniu.
